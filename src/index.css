@@ -1,13 +1,62 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Pangolin";
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  margin: 0 auto;
+  width: 500px;
+  padding: 10px;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 500px;
+  padding: 10px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+}
+
+.nav-bar .title{
+  font-size: large;
+  font-weight: bold;
+  padding-top: 0px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  margin-left: 10px;
+  padding-left: 5px;
+}
+
+.content {
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+.characters-holder{
+  display: flex;
+  align-items: center;
+}
+
+
+.character-names{
+  display: flex;
+  flex-direction: column;
+  padding:5px;
+  border: 1px solid black;
+}
+
+.page-icons{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-evenly;
 }
