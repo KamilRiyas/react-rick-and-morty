@@ -12,7 +12,16 @@ const Character = () => {
         <div>
             {error && <div>{error}</div>}
             {isPending && <div>Loading data...</div>}
-            {!isPending && <div>{data.image}</div>}
+            {!isPending && <div className='character-details'>
+                <img src={data.image} alt={data.name} />
+                <h3>{data.name}</h3>
+                <div>Status:{data.status === 'Alive' ? '😀' : data.status === 'Dead' ? '💀' : '❕'}</div>
+                <div>Species:{data.species}</div>
+                <div>Gender:{data.gender}</div>
+                <div>Location:{data.origin.name}</div>
+                <div></div>
+            </div>}
+
         </div>
     );
 }
