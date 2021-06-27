@@ -44,15 +44,20 @@ header {
 
 .characters-holder{
   display: flex;
-  align-items: center;
+  flex-direction: row;
 }
-
 
 .character-names{
   display: flex;
   flex-direction: column;
   padding:5px;
-  border: 1px solid black;
+  width:250px;
+  max-width: 250px;
+}
+
+.names-holder{
+  width:250px;
+  max-width: 250px;
 }
 
 .page-icons{
@@ -60,3 +65,16 @@ header {
   flex-direction:row;
   justify-content:space-evenly;
 }
+
+.page-icons > div{
+  cursor: pointer;
+}
+
+
+.character-details{
+  padding:5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+

@@ -6,6 +6,7 @@ const useFetch = (url) => {
     const [error, setIsError] = useState(null);
 
     useEffect(() => {
+        setIsPending(true);
         const abortCont = new AbortController();
         fetch(url, { signal: abortCont.signal })
             .then(res => {
